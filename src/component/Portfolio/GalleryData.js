@@ -33,7 +33,7 @@ const GalleryData = [
     },
     {
         id:4,
-        image:'../Images/quiz.jpeg',
+        image:'../Images/quiz.jpg',
         category:'development',
         name:'Coding Quiz',
         button:<a href="https://mlmcdan1.github.io/Coding-Quiz/"
@@ -53,7 +53,7 @@ const GalleryData = [
     },
     {
         id:6,
-        image:'../Images/book.jpeg',
+        image:'../Images/book.jpg',
         category:'Third-Party API',
         name:'Bookworm Archive',
         button:<a href="https://bpaige91.github.io/ProjectBookwormArchive/"
