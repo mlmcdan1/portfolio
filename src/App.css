@@ -1,11 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,11 +21,232 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container{
+  max-width: 95%;
+  margin: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.btn_shadow {
+  padding: 18px 25px;
+  margin: 15px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  color: #000;
+  transition: 0.5s;
+}
+
+.btn_shadow {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+
+.btn_shadow:hover {
+  color: white;
+  transform: translateY(-10px);
+}
+
+.d_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.f_flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.logo{
+  width: 6%;
+  border: 1px solid rgba(128, 128, 128, 0.616);
+  border-radius: 50%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+
+/* Gallery */
+.gallery-sec-wrp{
+  background:#f4f5fe;
+}
+.gallery-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-menu ul li{
+  float: left;
+  padding: 0 10px;
+}
+.gallery-menu ul li a {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background: #B91C1C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid#B91C1C;
+  text-transform: uppercase;
+}
+.gallery-grid{
+  padding-top: 30px;
+}
+.gallery-grid ul{
+  margin: 0 -10px;
+}
+.gallery-grid ul li {
+  width: 33.3333%;
+  float: left;
+  padding: 0 10px 20px;
+}
+.gallery-img{
+  position: relative;
+}
+.gallery-grid-innr{
+  background: #fff;
+  box-shadow: 0px 3px 15px 0px rgb(0 0 0 / 10%);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  padding: 5px 5px;
+  position: relative;
+  border-radius: 5px;
+}
+.gallery-img img{
+  width: 100%;
+  height: 300px;
+}
+.gallery-grid-hover{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(22,34,46,.9);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  border-radius: 5px;
+}
+.gallery-grid-innr:hover .gallery-grid-hover{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.gallery-grid-dsc h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+}
+.gallery-grid-dsc button{
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background: #B91C1C;
+  padding: 10px 20px;
+  border: 2px solid#B91C1C;
+  border-radius: 5px;
+}
+.gallery-grid-dsc button:hover{
+  border-color: #282c34;  
+}
+.gallery-grid-dsc button a{
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #fff;
+}
+.gallery-grid-dsc a{
+  display: flex;
+  color: white;
+  vertical-align: baseline;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.gallery-grid-dsc a:hover{
+  color:gray;
+  box-shadow: black;
+  cursor: pointer;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-x: inherit;
+}
+
+@media (max-width: 1300px) {
+  .image_flex {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .image_socials {
+    display: flex;
+    flex-direction: column;
   }
 }

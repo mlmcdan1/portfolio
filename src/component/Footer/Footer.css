@@ -1,0 +1,38 @@
+
+
+.footer-main{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    
+}
+
+.footer-links{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.img{
+    padding-top: 10px;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img{
+    border-radius: 50%;
+    width: 125px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-contacts{
+    display: flexbox;
+    margin-right: 100px;
+}
