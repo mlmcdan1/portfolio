@@ -29,7 +29,10 @@ const Header = () => {
                         <a href='#contact'>contact</a>
                     </li>
                     <li>
-                        <a href='https://docs.google.com/document/d/e/2PACX-1vS7GAcRCz-c1Wdq4XNxbE0jxHdMnybW4rfkAxVDK_K-2-wfjEQ94WziRdG_MwvtJsqI03QJpF04gSMV/pub'download className="action_btn">Resume</a>
+                        <a href='https://docs.google.com/document/d/e/2PACX-1vS7GAcRCz-c1Wdq4XNxbE0jxHdMnybW4rfkAxVDK_K-2-wfjEQ94WziRdG_MwvtJsqI03QJpF04gSMV/pub'
+                            target="_blank"
+                            rel="noreferrer"
+                            className="action_btn">Resume</a>
                     </li>
                 </ul>
                 </div>
