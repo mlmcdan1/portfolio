@@ -29,7 +29,7 @@ const Header = () => {
                         <a href='#contact'>contact</a>
                     </li>
                     <li>
-                        <a href='../../Files/MResume.pdf'download className="action_btn">Resume</a>
+                        <a href='../../MResume.pdf'download className="action_btn">Resume</a>
                     </li>
                 </ul>
                 </div>
