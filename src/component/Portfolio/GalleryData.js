@@ -46,7 +46,7 @@ const GalleryData = [
         image:'../Images/password.jpg',
         category:'Javascript',
         name:'Password Generator',
-        button:<a href="https://mlmcdan1.github.io/-Challenge3-PasswordGenerator/"
+        button:<a href="https://mlmcdan1.github.io/PasswordGenerator/"
         target="_blank"
         rel="noreferrer">Deployed Link</a>,
         github:"https://github.com/mlmcdan1/-Challenge3-PasswordGenerator"
